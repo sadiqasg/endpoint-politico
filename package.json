@@ -1,0 +1,26 @@
+{
+  "name": "endpoint-politico",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/saslamp/endpoint-politico.svg?branch=master)](https://travis-ci.org/saslamp/endpoint-politico)",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./server/test/app.test.js",
+    "start": "node ./server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saslamp/endpoint-politico.git"
+  },
+  "author": "sadiq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saslamp/endpoint-politico/issues"
+  },
+  "homepage": "https://github.com/saslamp/endpoint-politico#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "express": "^4.16.4",
+    "mocha": "^6.0.2"
+  }
+}
