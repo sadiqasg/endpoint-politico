@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 
-const routes = require('./routes');
+const routes = require('.controllers/routes');
 const app = express();
 const port = 3000 || process.env.PORT;
 const apiVersion1 = '/api/v1';
