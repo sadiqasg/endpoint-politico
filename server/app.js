@@ -2,7 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 
-const routes = require('.controllers/routes');
+const offices = require('./controllers/offices');
+
 const app = express();
 const port = 3000 || process.env.PORT;
 const apiVersion1 = '/api/v1';
@@ -21,7 +22,7 @@ app.post(`${apiVersion1}/posts`, (req, res) => {
 });
 
 app.get(`${apiVersion1}/posts`, (req, res) => {
-  let posts = routes.test();
+  let posts = offices.test();
   res.send(posts);
 });
 
