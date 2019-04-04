@@ -3,7 +3,7 @@ const fs = require('fs');
 /* declare function to avoid repetition i*/
 const fetchOffices = () => {
   try {
-    let officesString = fs.readFileSync('note-data.js');
+    let officesString = fs.readFileSync('officedb.js');
     return JSON.parse(officesString);
   }
 
@@ -11,7 +11,7 @@ const fetchOffices = () => {
 };
 
 const saveOffices = (offices) => {
-  fs.writeFileSync('note-data.js', JSON.stringify(offices));  
+  fs.writeFileSync('officedb.js', JSON.stringify(offices));  
 };
 
 /* endpoints */

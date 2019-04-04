@@ -21,9 +21,9 @@ app.get(apiVersion1, (req, res) => {
 app.post(`${apiVersion1}/posts`, (req, res) => {
 });
 
-app.get(`${apiVersion1}/posts`, (req, res) => {
-  let posts = offices.test();
-  res.send(posts);
+app.get(`${apiVersion1}/offices`, (req, res) => {
+  let offices = offices.getAll();
+  res.send(offices);
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
