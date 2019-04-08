@@ -1,4 +1,9 @@
+const express = require('express');
+const bodyParser = require('body-parser');
 const fs = require('fs');
+
+let app = express();
+app.use(bodyParser.urlencoded({extended: true}));
 
 /* declare function to avoid repetition i*/
 const fetchOffices = () => {
